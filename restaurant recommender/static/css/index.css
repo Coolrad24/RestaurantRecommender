@@ -1,0 +1,58 @@
+body{
+    background-color:cyan;
+  }
+  form{
+    margin-left:auto;
+    margin-right:auto;
+    width:60%;
+    height:50px;
+    background-color:teal
+  }
+  #container{
+    margin:auto;
+    
+  }
+  #container2{
+    display:flex;
+    background-color:lightgreen;
+  }
+  #webData{
+    width:60%;
+    border: solid white 5px;
+    
+  }
+  #AiData{
+    margin-left:10px;
+    width:40%;
+    border: solid white 5px;
+  }
+  #nm{
+    width:40%;
+    margin:15px 10px;
+    text-align:center;
+    border-width: 0px;
+    background-color:cyan;
+    text-decoration-color: black;
+    
+    
+    
+  }
+  input[type="text"]
+  {
+      font-family: Marker Felt, fantasy;
+  }
+  #ad{
+    width:40%;
+    margin:15px 10px;
+    text-align:center;
+    border-width: 0px;
+    background-color:cyan;
+    text-decoration-color: black;
+    
+    
+    
+  }
+  #go{
+    background-color: red;
+    border-color: black;
+  }

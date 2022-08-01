@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reviewer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    <h1 id="title">Restaurant Recommender</h1>
+    <div id="container">
+        <form method='post' action='{{ url_for("run")}}'>
+            
+            
+            <input type="text" id="nm" placeholder="Name" name='rname'value="{{ request.form['name'] }}">
+            <input type="text" id='ad' placeholder="address" name='raddress'value="{{ request.form['address'] }}">
+            <input type="submit" value="Submit">
+        </form>
+        
+        
+        <div id="container2">
+            <span id="webData">
+                <h1>{{data[0]}}</h1>
+                <h2>OverallRating {{data[4]}}</h2>
+                <h3>Bad Reviews</h3>
+                <ol>
+                    <li>{{data[5][0]}} : {{data[5][1]}}</li>
+                    <li>{{data[6][0]}} : {{data[6][1]}}</li>
+                    <li>{{data[7][0]}} : {{data[7][1]}}</li>
+                </ol>
+            </span>
+            <span id="AiData">
+                <h1>Suggestions:</h1>
+                <a href="{{data3}}">{{data2}}</a>
+            </span>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
